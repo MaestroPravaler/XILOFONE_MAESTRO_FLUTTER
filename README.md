@@ -1,16 +1,10 @@
-# xilofone_maestro
+## Projeto Xilofone Maestro
+ O projeto xilofone maestro foi desenvolvido em 2020 para atender os alunos do Colégio SESC unidade Araxá na disciplina música.
 
-A new Flutter project.
+ As cores adotadas para as teclas do Xilofone virtual obedecem a ordem existente nos instrumentos físicos da escola (Cores do Arco-Iris) não sendo possível adotar outros aplicativos disponíveis sem prejuízo didático.
+ ![]()
+ ![]()
+ ![]()
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ O Aplicativo foi retirado da playstore no final do ano. A tela de abertura continha o logotipo do SESC sendo subistituída nesta versão pelo logotipo do meu canal do youtube.
