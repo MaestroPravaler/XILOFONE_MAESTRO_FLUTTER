@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:xilofone_maestro/app/modules/sobre/controllers/sobre_controller.dart';
 
-class SobreView extends GetView<SobreController> {
+import 'package:get/get.dart';
+
+import '../controllers/autor_controller.dart';
+
+class AutorView extends GetView<AutorController> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -11,17 +13,17 @@ class SobreView extends GetView<SobreController> {
           children: <Widget>[
             Padding(
               padding: EdgeInsets.all(5.0),
-              child: Image.asset('assets/images/coopress_logo.jpeg'),
+              child: Image.asset('assets/images/rosto.jpg'),
             ),
             Padding(
               padding: EdgeInsets.all(1.0),
               child: Text(
-                'MISSÃO',
+                'Robson Dias',
                 style: TextStyle(
                     fontSize: 20,
                     fontStyle: FontStyle.normal,
                     fontWeight: FontWeight.bold,
-                    color: Colors.purpleAccent,
+                    color: Colors.black,
                     decoration: TextDecoration.none),
               ),
             ),
@@ -34,72 +36,90 @@ class SobreView extends GetView<SobreController> {
                       AssetImage('assets/images/formatura_icon.png'),
                 ),
                 title: Text(
-                  "Nossa missão ....",
+                  "Doutor em Musicologia / Engenharia de Software (USP)",
                   style: TextStyle(
                     fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 subtitle: Text(
-                  "Procuramos melhorar ...",
+                  "(Universidade de São Paulo/ SP)",
                 ),
               ),
-            ),
-            Text(
-              'VALORES',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontStyle: FontStyle.normal,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purpleAccent,
-                  decoration: TextDecoration.none),
             ),
             Padding(
               padding: EdgeInsets.all(1.0),
               child: ListTile(
                 leading: CircleAvatar(
                   backgroundColor: Colors.white,
-                  backgroundImage:
-                      AssetImage('assets/images/formatura_icon.png'),
+                  backgroundImage: AssetImage('assets/images/diploma_icon.png'),
                 ),
                 title: Text(
-                  "Nossos valores são ....",
+                  "Mestre em Musicologia (USP)",
                   style: TextStyle(
                     fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 subtitle: Text(
-                  "Procuramos melhorar ...",
+                  "(Universidade de São Paulo / SP)",
                 ),
               ),
-            ),
-            Text(
-              'Porque fazemos o que fazemos?',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontStyle: FontStyle.normal,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purpleAccent,
-                  decoration: TextDecoration.none),
             ),
             Padding(
               padding: EdgeInsets.all(1.0),
               child: ListTile(
                 leading: CircleAvatar(
                   backgroundColor: Colors.white,
-                  backgroundImage:
-                      AssetImage('assets/images/formatura_icon.png'),
+                  backgroundImage: AssetImage('assets/images/diploma_icon.png'),
                 ),
                 title: Text(
-                  "Nosso principal objetivo e ....",
+                  "Especialista em Docência do Ensino Superior (UFG) ",
                   style: TextStyle(
                     fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 subtitle: Text(
-                  "Procuramos melhorar ...",
+                  "(Universidade Gama Filho / RJ.)",
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(1.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/diploma_icon.png'),
+                ),
+                title: Text(
+                  "Especialista em Psicanálise (UNYLEYA)",
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                subtitle: Text(
+                  "(Faculdade Unyleya / RJ.)",
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(1.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/diploma_icon.png'),
+                ),
+                title: Text(
+                  "Bacharel em Música / Regência (UFMG)",
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                subtitle: Text(
+                  "(Universidade Federal de Minas Gerais/ MG)",
                 ),
               ),
             ),

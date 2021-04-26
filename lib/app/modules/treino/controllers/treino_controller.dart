@@ -8,7 +8,7 @@ class TreinoController extends GetxController {
   AudioCache audioCache = AudioCache(prefix: "assets/audio/");
 
   playLocal(botao) async {
-    audioPlayer = await (audioCache.play('$botao.wav')) as AudioPlayer;
+    audioPlayer = await (audioCache.play('$botao.wav'));
   }
 
 // ================================================================
